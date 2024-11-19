@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pengajuan Cuti Satpam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto p-8">
+      <h1 class="text-3xl font-bold mb-4">Form Pengajuan Cuti Satpam</h1>
+
+      <form>
+        <div class="mb-4">
+          <label for="nama" class="block text-gray-700 text-sm font-bold mb-2"
+            >Nama Satpam</label
+          >
+          <input
+            type="text"
+            id="nama"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Masukkan nama lengkap"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label
+            for="jenis_pengajuan"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Jenis Pengajuan</label
+          >
+          <select
+            id="jenis_pengajuan"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          >
+            <option value="cuti">Cuti</option>
+            <option value="ganti_libur">Ganti Libur</option>
+            <option value="ganti_shift">Ganti Shift</option>
+          </select>
+        </div>
+
+        <div id="form-cuti" class="hidden mb-4">
+          <label
+            for="tanggal_mulai"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Tanggal Mulai</label
+          >
+          <input
+            type="date"
+            id="tanggal_mulai"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+
+          <label
+            for="tanggal_selesai"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Tanggal Selesai</label
+          >
+          <input
+            type="date"
+            id="tanggal_selesai"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+
+          <label for="alasan" class="block text-gray-700 text-sm font-bold mb-2"
+            >Alasan</label
+          >
+          <textarea
+            id="alasan"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            rows="4"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Ajukan
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

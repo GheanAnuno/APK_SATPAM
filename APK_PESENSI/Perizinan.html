@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Satpam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900">
+    <div class="container mx-auto p-8">
+      <h1 class="text-3xl font-bold mb-4 text-white">
+        Form Pengajuan Cuti Satpam
+      </h1>
+
+      <form>
+        <div class="mb-4">
+          <label for="nama" class="block text-white text-sm font-bold mb-2"
+            >Nama Satpam</label
+          >
+          <input
+            type="text"
+            id="nama"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Masukkan nama lengkap"
+          />
+          <div class="mt-4">
+            <label
+              for="jenis_pengajuan"
+              class="block text-white text-sm font-bold mb-2"
+              >Jenis Pengajuan</label
+            >
+            <select
+              id="jenis_pengajuan"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            >
+              <option value="cuti">Cuti</option>
+              <option value="ganti_libur">Ganti Libur</option>
+              <option value="ganti_shift">Ganti Shift</option>
+            </select>
+            <label
+              for="jenis_pengajuan"
+              class="block text-white text-sm font-bold mt-4 mb-2"
+              >Tanggal Pengajuan</label
+            >
+            <input
+              type="text"
+              id="tanggal"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Masukkan Tanggal"
+            />
+            <label
+              for="jenis_pengajuan"
+              class="block text-white text-sm font-bold mb-2 mt-4"
+              >Alasan</label
+            >
+            <select
+              id="jenis_pengajuan"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            >
+              <option value="cuti">Sakit</option>
+              <option value="ganti_libur">Alpha</option>
+              <option value="ganti_shift">Ada Keperluan</option>
+            </select>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Ajukan
+        </button>
+      </form>
+    </div>
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold mb-4 text-white">Perizinan Satpam</h1>
+
+      <table class="min-w-full border border-gray-300">
+        <thead>
+          <tr>
+            <th
+              class="px-6 py-3 bg-gray-300 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+            >
+              Nama
+            </th>
+            <th
+              class="px-6 py-3 bg-gray-300 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+            >
+              Pengajuan Cuti
+            </th>
+            <th
+              class="px-6 py-3 bg-gray-300 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+            >
+              Pengajuan Ganti Libur
+            </th>
+            <th
+              class="px-6 py-3 bg-gray-300 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+            >
+              Pengajuan Ganti Shift
+            </th>
+            <th
+              class="px-6 py-3 bg-gray-300 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+            >
+              Alasan
+            </th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+          <tr>
+            <td class="px-6 py-4 whitespace-nowrap">John Doe</td>
+            <td class="px-6 py-4 whitespace-nowrap">2 hari</td>
+            <td class="px-6 py-4 whitespace-nowrap">Senin</td>
+            <td class="px-6 py-4 whitespace-nowrap">Pagi ke Sore</td>
+            <td class="px-6 py-4 whitespace-nowrap">Sakit</td>
+          </tr>
+        </tbody>
+      </table>
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4"
+        type="submit"
+        on
+      >
+        <a href="DashBoard.html">Kembali</a>
+      </button>
+    </div>
+  </body>
+</html>
