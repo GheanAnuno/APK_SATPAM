@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Satpam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-800 text-gray-200">
+    <!-- Header -->
+    <header class="py-8 px-4">
+      <h1 class="text-4xl font-semibold text-center">Form Pengajuan Cuti Satpam</h1>
+    </header>
+
+    <!-- Form Section -->
+    <section class="max-w-4xl mx-auto bg-gray-900 p-6 rounded-lg shadow-lg">
+      <form>
+        <div class="space-y-6">
+          <div>
+            <label for="nama" class="block text-sm font-semibold mb-2">Nama Satpam</label>
+            <input
+              type="text"
+              id="nama"
+              class="w-full p-3 bg-gray-700 text-gray-200 rounded-md border border-gray-600 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+              placeholder="Masukkan nama lengkap"
+            />
+          </div>
+
+          <div>
+            <label for="jenis_pengajuan" class="block text-sm font-semibold mb-2">Jenis Pengajuan</label>
+            <select
+              id="jenis_pengajuan"
+              class="w-full p-3 bg-gray-700 text-gray-200 rounded-md border border-gray-600 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+            >
+              <option value="cuti">Cuti</option>
+              <option value="ganti_libur">Ganti Libur</option>
+              <option value="ganti_shift">Ganti Shift</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="tanggal" class="block text-sm font-semibold mb-2">Tanggal Pengajuan</label>
+            <input
+              type="date"
+              id="tanggal"
+              class="w-full p-3 bg-gray-700 text-gray-200 rounded-md border border-gray-600 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label for="alasan" class="block text-sm font-semibold mb-2">Alasan</label>
+            <select
+              id="alasan"
+              class="w-full p-3 bg-gray-700 text-gray-200 rounded-md border border-gray-600 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+            >
+              <option value="sakit">Sakit</option>
+              <option value="alpha">Alpha</option>
+              <option value="keperluan">Ada Keperluan</option>
+            </select>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full py-3 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          >
+            Ajukan
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Table Section -->
+    <section class="max-w-6xl mx-auto mt-8 p-6 bg-gray-900 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-semibold text-center mb-4">Perizinan Satpam</h2>
+      <table class="min-w-full text-sm text-gray-200">
+        <thead>
+          <tr class="bg-gray-700">
+            <th class="px-6 py-3 text-left">Nama</th>
+            <th class="px-6 py-3 text-left">Cuti</th>
+            <th class="px-6 py-3 text-left">Ganti Libur</th>
+            <th class="px-6 py-3 text-left">Ganti Shift</th>
+            <th class="px-6 py-3 text-left">Alasan</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-600">
+          <tr class="bg-gray-800">
+            <td class="px-6 py-4">John Doe</td>
+            <td class="px-6 py-4">2 hari</td>
+            <td class="px-6 py-4">Senin</td>
+            <td class="px-6 py-4">Pagi ke Sore</td>
+            <td class="px-6 py-4">Sakit</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="mt-8 text-center">
+      <a
+        href="DashBoard.html"
+        class="text-blue-500 hover:text-blue-700 font-semibold"
+        >Kembali ke Dashboard</a
+      >
+    </footer>
+  </body>
+</html>

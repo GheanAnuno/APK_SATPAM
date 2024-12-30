@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navbar Satpam</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-gray-900 shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img class="h-8 w-8 mr-2" src="gambar/unisba.png" alt="Logo" />
+            <span class="text-white font-semibold text-lg">Absensi Satpam</span>
+          </div>
+          <!-- Menu -->
+          <div class="hidden md:flex space-x-6">
+            <a href="jadwal.php" class="text-gray-300 hover:text-white flex items-center">
+              <img src="gambar/schedule.png" alt="Jadwal" class="h-5 w-5 mr-2" /> Jadwal Shift
+            </a>
+            <a href="absen.php" class="text-gray-300 hover:text-white flex items-center">
+              <img src="gambar/absen,.png" alt="Absen" class="h-5 w-5 mr-2" /> Absen
+            </a>
+            <a href="Perizinan.html" class="text-gray-300 hover:text-white flex items-center">
+              <img src="gambar/writing.png" alt="Perizinan" class="h-5 w-5 mr-2" /> Perizinan
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white flex items-center">
+              <img src="gambar/book.png" alt="Laporan" class="h-5 w-5 mr-2" /> Laporan Bulanan
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white flex items-center">
+              <img src="gambar/salary.png" alt="Gaji" class="h-5 w-5 mr-2" /> Gaji
+            </a>
+          </div>
+          <!-- User Menu -->
+          <div class="relative">
+            <button onclick="toggleMenu()" class="flex items-center text-sm focus:outline-none">
+              <img class="h-8 w-8 rounded-full" src="gambar/icons8-admin-settings-male.gif" alt="User profile" />
+            </button>
+            <div id="user-menu" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-lg shadow-lg bg-white py-2">
+              <a href="menuprofile.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profile Satpam</a>
+              <a href="Setting.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
+              <a href="from.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign Out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="text-center py-16">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Terobosan Baru</h1>
+      <p class="text-lg text-gray-600 mb-6">Presensi Karyawan Satpam Menggunakan Teknologi</p>
+      <img src="gambar/logo of person using laptop.png" alt="Presensi" class="w-48 mx-auto" />
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4 text-center fixed bottom-0 w-full">
+      <p>&copy; 2024 Kelompok Absensi. All rights reserved.</p>
+      <div class="mt-2 space-x-4">
+        <a href="#" class="hover:underline">Kebijakan Privasi</a>
+        <a href="#" class="hover:underline">Syarat dan Ketentuan</a>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("user-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
